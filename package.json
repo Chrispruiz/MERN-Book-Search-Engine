@@ -14,5 +14,16 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrispruiz/MERN-Book-Search-Engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chrispruiz/MERN-Book-Search-Engine/issues"
+  },
+  "homepage": "https://github.com/Chrispruiz/MERN-Book-Search-Engine#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.25.2"
   }
 }
