@@ -10,7 +10,6 @@ import { REMOVE_BOOK } from '../utils/mutations';
 const SavedBooks = () => {
   const { loading, data} = useQuery(GET_ME);
   const [removeBook, {error}] = useMutation(REMOVE_BOOK);
-
   const userData = data?.me || {};
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
@@ -31,7 +30,7 @@ const SavedBooks = () => {
       console.log(data);
 
       if (error) {
-        throw new Error ("Something when wrong!");
+        throw new Error ("Something went wrong!");
       }
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
